@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://byave0haxliht"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_gn15q"]
+
+[node name="Label" type="Label"]
+offset_left = 391.0
+offset_top = 183.0
+offset_right = 630.0
+offset_bottom = 206.0
+text = "Le jeu des balles qui font boing"
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_gn15q")
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = 70.0
+offset_top = 49.0
+offset_right = 169.0
+offset_bottom = 80.0
+text = "Faire Boing "
+
+[connection signal="pressed" from="Node2D/Button" to="Node2D" method="_on_button_pressed"]
