@@ -12,5 +12,6 @@ func _process(delta):
 
 
 
-func _on_button_pressed():
+func _button_pressed():
 	get_tree().change_scene_to_file("res://Main.tscn")
+	gros caca
